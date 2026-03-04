@@ -74,7 +74,7 @@ For production server automation, this pipeline can be scheduled using a Cron Jo
 ✅ Step #5 - Final Results & Validation
 The project has been successfully executed and validated with the following results:
 
-History Tracking: The system successfully identified and recorded customer city change history. There were 148 rows of historical data successfully captured during the testing process.
+History Tracking: The system successfully identified and recorded customer city change history. There were rows of historical data successfully captured during the testing process.
 
 Note: Raw CSV datasets are not included in this repository due to GitHub's file size limits. Please ensure the Olist dataset is placed in the root directory before running the pipeline.
 
