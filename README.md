@@ -38,7 +38,8 @@ New Entity-Relationship Diagram (ERD):
 Below is the implemented Star Schema design, featuring the addition of a Surrogate Key (customer_sk) and control columns (effective_date, expiry_date, and is_current) to support historical data tracking:
 
 ![ERD DATA WAREHOUSE](Z_ERD_DATA_WAREHOUSE.png)
------------------------------------------------------------------------------------------------------------------------------🚀 Step #3 - ELT with Python & SQL
+---------
+🚀 Step #3 - ELT with Python & SQL
 The ELT (Extract, Load, Transform) process was built to move data from the operational database to the data warehouse automatically, cleanly, and structurally.
 
 Workflow Description: 
