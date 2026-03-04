@@ -76,6 +76,8 @@ The project has been successfully executed and validated with the following resu
 
 History Tracking: The system successfully identified and recorded customer city change history. There were 148 rows of historical data successfully captured during the testing process.
 
+Note: Raw CSV datasets are not included in this repository due to GitHub's file size limits. Please ensure the Olist dataset is placed in the root directory before running the pipeline.
+
 # Docker Compose Setup for Project
 Before you can run this project using Docker Compose, make sure you have created a `.env` file with the necessary environment variables. 
 
