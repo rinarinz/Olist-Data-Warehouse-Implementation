@@ -1,5 +1,5 @@
 # UPDATE (FOR EXERCISE WEEK 6-DATA WAREHOUSE PACMAAN)
------------------------------------------------------------------------------------------------------------------------------
+--------
 📊 Data Warehouse Implementation & ELT Pipeline Report
 
 Case Study: Olist E-Commerce Dataset
@@ -22,7 +22,7 @@ Answer: A daily batch update is sufficient for internal reporting and courier pe
 Question: What additional information is needed to facilitate data version tracking?
 
 Answer: We need clear indicators for the active record (is_current) and the address validity period (effective_date & expiry_date).
------------------------------------------------------------------------------------------------------------------------------
+--------
 🛠️ Step #2 - Slowly Changing Dimension (SCD) Strategy
 Based on the requirements above, I decided to implement SCD Type 2.
 Why SCD Type 2?
@@ -56,7 +56,7 @@ Fact Table Loading: Building the fact_fulfillment table by joining transaction d
 Error Handling & Alert:
 
 The Python script is equipped with try-except blocks to catch connection failures or query errors. If an error occurs, the system provides an Alert in the form of a log message in the terminal to facilitate the debugging process.
-----------------------------------------------------------------------------
+--------
 🎼 Step #4 - Orchestration with Luigi
 The entire workflow is managed using the Luigi framework to handle task dependencies automatically.
 
@@ -66,9 +66,10 @@ Automated Retries: Ensures that failed processes can be clearly identified throu
 
 Scheduling (Cron):
 For production server automation, this pipeline can be scheduled using a Cron Job to run regularly (e.g., every midnight):
-
+```
 0 0 * * * cd /project-path && python orchestrator.py
------------------------------------------------------------------------------------------------------------------------------
+```
+---------
 ✅ Step #5 - Final Results & Validation
 The project has been successfully executed and validated with the following results:
 
